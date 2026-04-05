@@ -6,9 +6,16 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-background px-6 py-24 md:px-16 lg:py-32"
+      className="relative overflow-hidden bg-background px-6 py-24 md:px-16 lg:py-32"
     >
-      <div className="mx-auto max-w-4xl text-center">
+      {/* Decorative letter — large faint Q as visual anchor */}
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/4 select-none font-display text-[22rem] font-bold leading-none text-foreground/[0.03]"
+      >
+        Q
+      </span>
+      <div className="relative mx-auto max-w-4xl text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

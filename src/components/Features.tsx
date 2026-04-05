@@ -34,7 +34,12 @@ const Features = () => {
   return (
     <section
       id="features"
-      className="bg-primary px-6 py-24 md:px-16 lg:py-32"
+      className="relative bg-primary px-6 py-24 md:px-16 lg:py-32"
+      style={{
+        backgroundImage:
+          'radial-gradient(circle, rgba(245,240,232,0.07) 1px, transparent 1px)',
+        backgroundSize: '24px 24px',
+      }}
     >
       <div className="mx-auto max-w-5xl">
         <motion.div

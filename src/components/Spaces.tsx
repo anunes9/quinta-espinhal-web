@@ -53,10 +53,17 @@ const Spaces = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className={`flex flex-col items-center gap-10 lg:flex-row ${
+              className={`relative flex flex-col items-center gap-10 lg:flex-row ${
                 index % 2 !== 0 ? 'lg:flex-row-reverse' : ''
               }`}
             >
+              {/* Decorative section number */}
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute -top-2 left-0 select-none font-display text-[5rem] font-bold leading-none text-foreground/[0.06] lg:text-[7rem]"
+              >
+                {String(index + 1).padStart(2, '0')}
+              </span>
               <div className="w-full overflow-hidden lg:w-1/2">
                 <img
                   src={space.image}
