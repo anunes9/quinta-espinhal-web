@@ -7,6 +7,7 @@ import { Menu, X } from 'lucide-react'
 const navLinks = [
   { href: '#about', label: 'A Quinta' },
   { href: '#spaces', label: 'Espaços' },
+  { href: '#gallery', label: 'Galeria' },
   { href: '#features', label: 'Experiência' },
   { href: '#contact', label: 'Contacto' },
 ]
