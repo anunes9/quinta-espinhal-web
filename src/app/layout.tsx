@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Playfair_Display, Crimson_Pro } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const playfairDisplay = Playfair_Display({
@@ -29,10 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="pt"
+      lang='pt'
       className={`${playfairDisplay.variable} ${crimsonPro.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <Analytics />
+      <body className='min-h-full flex flex-col'>{children}</body>
     </html>
   )
 }

@@ -44,11 +44,11 @@ const Contact = () => {
               +351 962 824 699
             </a>
             <a
-              href='mailto:filipa.ferreira@espinhalartesanal.com'
+              href='mailto:filipamarrecasferreira@gmail.com'
               className='flex items-center gap-3 border border-border px-6 py-3 font-body text-sm tracking-wider text-foreground transition-all duration-300 hover:border-accent hover:text-accent'
             >
               <Mail className='h-4 w-4 flex-shrink-0' strokeWidth={1.5} />
-              filipa.ferreira@espinhalartesanal.com
+              filipamarrecasferreira@gmail.com
             </a>
           </div>
         </motion.div>
